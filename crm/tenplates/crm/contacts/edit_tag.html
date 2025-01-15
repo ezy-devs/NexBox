@@ -1,0 +1,15 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Edit Tag</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Tag Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter tag name" required>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+
+
+{% block content %}
+<style>
+    .form-control:focus {
+        box-shadow: none;
+    }
+</style>
+<div class="container-fluid">
+    <h1>Welcome <strong>{{username}}</strong></h1>
+</div>
+
+{% endblock %}
